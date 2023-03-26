@@ -8,7 +8,7 @@ namespace Laboratorio04
 {
     public class Ejercicio05
     {
-        public int[] CalcularBilletes(int cantidad, int[,] billetes)
+        public int[] CalcularBilletes(int cant, int[,] billetes)
         {
             int[] resultado = new int[billetes.GetLength(0)];
 
@@ -17,7 +17,7 @@ namespace Laboratorio04
                 int denominacion = billetes[i, 0];
                 int limiteDenominacion = billetes[i, 1];
 
-                int posiblesBilletes = cantidad / denominacion;
+                int posiblesBilletes = cant / denominacion;
 
                 if (limiteDenominacion < 0 || posiblesBilletes <= limiteDenominacion)
                 {
@@ -28,7 +28,7 @@ namespace Laboratorio04
                     resultado[i] = limiteDenominacion;
                 }
 
-                cantidad = cantidad - (resultado[i] * denominacion);
+                cant = cant - (resultado[i] * denominacion);
             }
 
             return resultado;
