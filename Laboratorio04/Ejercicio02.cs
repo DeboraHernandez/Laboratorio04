@@ -20,8 +20,8 @@ namespace Laboratorio04
               //  suma = suma + nums[i];
             //}
 
-            double prom = suma / nums.Length;
-            return new double[] {suma, prom};
+            double pro = suma / nums.Length;
+            return new double[] {suma, pro};
         }
     }
 }
