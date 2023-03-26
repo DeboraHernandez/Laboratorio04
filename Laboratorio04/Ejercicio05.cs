@@ -30,7 +30,8 @@ namespace Laboratorio04
 
                 cantidad = cantidad - (resultado[i] * denominacion);
             }
-            return new int[] {};
+
+            return resultado;
         }
     }
 }
